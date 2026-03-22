@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Walker Immel</title>
+    <link href="assets/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-black text-white">
+    <!-- Topbar / Nav -->
+    <header
+        id="header"
+        class="bg-black text-gray-200 w-full fixed top-0 left-0 z-20 flex items-center justify-between px-4 md:px-8 md:pt-2 pb-2"
+    >
+        <a href="index.html" class="font-bold text-xl mt-3">Walker Immel</a>
+        <button
+            id="menu-button"
+            class="relative z-40 text-5xl md:hidden"
+        >
+            ☰
+        </button>
+        <nav class="hidden md:flex gap-8 text-xl">
+            <a href="about.html" class="nav-link">about</a>
+            <a href="projects.html" class="nav-link">projects</a>
+            <a href="music.html" class="nav-link">music</a>
+        </nav>
+    </header>
+
+<!-- Mobile Menu -->
+    <div
+        id="mobile-menu"
+        class="hidden fixed inset-0 bg-gradient-to-b from-black to-black/80 text-white z-50"
+    >
+        <button
+            id="close-button"
+            class="absolute text-gray-200 top-2 right-6 text-4xl"
+        >✕</button>
+        <div class="flex flex-col text-xl items-center pt-24 gap-10">
+            <a href="about.html">about</a>
+            <a href="projects.html">projects</a>
+            <a href="music.html">music</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="pt-24 px-6 max-w-2xl md:max-w-4xl mx-auto">
+      <h1 class="text-5xl md:text-6xl mb-6">About Me</h1>
+      <p class="text-lg md:text-xl mb-4">
+        Hi! I'm <strong>Walker Immel</strong> (or Forrest officially, but I
+        don't mind either name) and I <i>love</i> music and technology.<br /><br />
+        <!--I'm a recent-ish graduate from
+        <strong>Winthrop University</strong> where I earned degrees in Computer
+        Science and Music Technology.-->
+        I'm a software developer and audio engineer that graduated from <strong>Winthrop University</strong> where I earned degrees in Computer Science and Music Technology. My latest interests have been in exploring computer graphics using OpenGL and creative coding using languages like <a href="https://100r.co/site/orca.html" class="text-cyan-600">Orca</a>, <a href="https://strudel.cc/" class="text-cyan-600">Strudel,</a> and <a href="https://github.com/ojack/hydra" class="text-cyan-600">Hydra</a>.
+        I enjoy experimenting with audio software and have been getting into the hardware side more lately, and built the <a href="https://github.com/gary909/Helios-One-Synth-V1" class="text-cyan-600">Helios One</a> synth. Some of my interests outside of music
+        and/or technology include:<br /><br />
+        <ul class="list-disc pl-5 text-lg md:text-xl">
+            <li><strong class="tracking-wide">Art</strong>: drawing/sketching, painting (watercolor), digital art</li>
+            <li><strong class="tracking-wide">Reading</strong>: mostly fantasy & sci-fi. currently reading <i>The Light of All that Falls</i> by <strong>James Islington</strong> and <i>Project Hail Mary</i> by <strong>Andy Weir</strong> in preparation of the film</li>
+            <li><strong class="tracking-wide">Pottery</strong>: i took a ceramics class in college and absolutely loved it. i recently got some space at a studio near my home and can't wait to get back into it. there's something about crafting a physical object with your hands</li>
+            <li><strong class="tracking-wide">Puzzles</strong>: i love puzzles and puzzle games! the last one i played was <i>Type Help</i> which was great and im currently enjoying the rusty lake series</li>
+            <li><strong class="tracking-wide">Movies</strong>: ask to add me on letterboxd :)</li>
+
+        </ul>
+      </p>
+      <br>
+      <h2 id="tech-stack">Tech Stack / Skills</h2>
+
+      <div id="tech-stack-container" class="max-w-4xl mx-auto mt-8 space-y-6 text-lg md:text-xl">
+
+        <div class="grid grid-cols-[170px_1fr] items-start">
+            <div class="text-gray-300 text-lg tracking-wide mt-[3px]">Frontend</div>
+            <div class="flex flex-wrap gap-2">
+                <span class="badge flex items-center gap-2">
+                    <img src="src/assets/devicon--html5.png" class="h-5 w-5"/>HTML</span>
+                <span class="badge flex items-center gap-2">
+                    <img src="src/assets/devicon--css3.png" class="h-5 w-5"/>CSS</span>
+                <span class="badge flex items-center gap-2">
+                    <img src="src/assets/logos--javascript.png" class="h-5 w-5"/>JavaScript</span>
+                <span class="badge flex items-center gap-2">
+                    <img src="src/assets/devicon--tailwindcss.png" class="h-5 w-5"/>Tailwind</span>
+                <span class="badge flex items-center gap-2">
+                    <img src="src/assets/logos--react.png" class="h-5 w-6"/>React</span>
+                <span class="badge flex items-center gap-2">
+                    <img src="src/assets/logos--solidjs-icon.png" class="h-5 w-5"/>Solid</span>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-[170px_1fr] items-start">
+            <div class="text-gray-300 text-lg tracking-wide mt-[3px]">Backend</div>
+            <div class="flex flex-wrap gap-2">
+                <span class="badge flex items-center gap-2">
+                    <img src="src/assets/logos--nodejs-icon-alt.png" class="h-5 w-5"/>Node.js</span>
+                <span class="badge flex items-center gap-2">
+                    <img src="src/assets/skill-icons--expressjs-dark.png" class="h-5 w-5"/>Express.js</span>
+                <span class="badge flex items-center gap-2">
+                    <img src="src/assets/skill-icons--dotnet.png" class="h-5 w-5"/>C# / .NET</span>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-[170px_1fr] items-start">
+            <div class="text-gray-300 text-lg tracking-wide mt-[3px]">Databases</div>
+            <div class="flex flex-wrap gap-2">
+                <span class="badge flex items-center gap-2">
+                    <img src="src/assets/logos--postgresql.png" class="h-5 w-5"/>PostgreSQL</span>
+                <span class="badge flex items-center gap-2">
+                    <img src="src/assets/devicon--sqlite.png" class="h-5 w-5"/>SQLite</span>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-[170px_1fr] items-start">
+            <div class="text-gray-300 text-lg tracking-wide mt-[3px]">Systems / Graphics</div>
+            <div class="flex flex-wrap gap-2">
+                <span class="badge flex items-center gap-2">
+                    <img src="src/assets/logos--opengl.png" class="h-5 w-10"/>OpenGL</span>
+                <span class="badge flex items-center gap-2">
+                    <img src="src/assets/vscode-icons--file-type-cpp3.png" class="h-5 w-5"/>C++</span>
+                <span class="badge flex items-center gap-2">
+                    <img src="src/assets/catppuccin--lua.png" class="h-5 w-5"/>Lua</span>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-[170px_1fr] items-start">
+            <div class="text-gray-300 text-lg tracking-wide mt-[3px]">Tools</div>
+            <div class="flex flex-wrap gap-2">
+                <span class="badge flex items-center gap-2">
+                    <img src="src/assets/logos--docker-icon.png" class="h-5 w-6"/>Docker</span>
+                <span class="badge flex items-center gap-2">
+                    <img src="src/assets/simple-icons--yaak.png" class="h-5 w-5"/>Yaak</span>
+                <span class="badge flex items-center gap-2">
+                    <img src="src/assets/devicon--vitejs.png" class="h-5 w-5"/>Vite</span>
+                <span class="badge flex items-center gap-2">
+                    <img src="src/assets/devicon--vitest.png" class="h-5 w-5"/>Vitest</span>
+                <span class="badge flex items-center gap-2">
+                    <img src="src/assets/logos--playwright.png" class="h-5 w-5"/>Playwright</span>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-[170px_1fr] items-start">
+            <div class="text-gray-300 text-lg tracking-wide mt-[3px]">Audio & Creative Coding</div>
+            <div class="flex flex-wrap gap-2">
+                <span class="badge flex items-center gap-2">
+                    <img src="src/assets/flstudioicon.png" class="h-5 w-5"/>FL Studio</span>
+                <span class="badge flex items-center gap-2">
+                    <img src="src/assets/cbi--abletonlive.png" class="h-5 w-5"/>Ableton Live</span>
+                <span class="badge flex items-center gap-2">
+                    <img src="src/assets/simple-icons--protools.png" class="h-5 w-5"/>Pro Tools</span>
+                <span class="badge flex items-center gap-2">
+                    <img src="src/assets/catppuccin--juce.png" class="h-5 w-5"/>JUCE</span>
+                <span class="badge flex items-center gap-2">
+                    <img src="src/assets/puredataicon.png" class="h-5 w-5"/>PureData</span>
+                <span class="badge flex items-center gap-2">
+                    <img src="src/assets/simple-icons--max.png" class="h-5 w-5"/>Max</span>
+            </div>
+        </div>
+
+        <!-- WANT TO ADD: Docker, Yaak-->
+
+      </div>
+      <br>
+      <h2 id="tech-stack">Contact Me</h2>
+
+      <div class="flex flex-col gap-4 mt-8">
+        <a
+            href="mailto:walker1461@gmail.com"
+            target="_blank"
+            class="w-[22rem] contact-btn flex-1 text-left px-4 py-2 bg-black text-white border-solid border-white border-1 hover:bg-grey-900 transition"
+        >
+            Email
+        </a>
+        <a
+            href="https://www.linkedin.com/in/forrest-immel/"
+            target="_blank"
+            class="w-[22rem] contact-btn flex-1 text-left px-4 py-2 bg-black text-white border-solid border-white border-1 hover:bg-grey-900 transition"
+        >
+            LinkedIn
+        </a>
+        <a
+            href="https://github.com/walker1461"
+            target="_blank"
+            class="w-[22rem] contact-btn flex-1 text-left px-4 py-2 bg-black text-white border-solid border-white border-1 hover:bg-grey-900 transition"
+        >
+            GitHub
+        </a>
+
+      </div>
+
+      <p class="text-lg md:text-xl mb-4">
+        
+      </p>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="bg-black text-gray-400 w-full flex items-center justify-center p-4 mt-12 bottom-0 left-0 right-0"
+    >
+      &copy; 2026 Walker Immel. All Rights Reserved.
+    </footer>
+
+    <script src="src/menu.js"></script>
+  </body>
+</html>
