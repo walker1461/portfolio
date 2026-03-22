@@ -14,8 +14,11 @@ body {
   background: black;
   min-height: 100dvh;
   margin: 0;
-  overflow: hidden;
   font-family: "GFS Didot", serif;
+}
+
+#hero-body {
+  overflow: hidden;
 }
 
 .h1-custom {
