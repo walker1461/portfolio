@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scarlet Ibis Charters</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/sifavicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/sifavicon-16x16.png">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Muli:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sistyles.css">
+    <link rel="stylesheet" href="simediaqueries.css">
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Navbar -->
+    <header class="fixed hover:bg-opacity-100 transition duration-500 bg-opacity-90 bg-gray-800 w-full z-30 p-1 sm:p-1 md:p-2 backdrop-blur-md">
+        <nav class="backdrop-blur-md" id="navbar"></nav>
+            <div class="mx-2 md:mx-auto lg:mx-8 px-0 flex justify-between items-center backdrop-blur-md relative">
+                <div class="flex items-center space-x-1">
+                    <!-- Scarlet Ibis Logo -->
+                    <img src="./assets/scarletibis_notextnowhite.png" alt="Logo" class="logo">
+                    <!-- Site Title -->
+                    <a href="#home" class="text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold font-title">Scarlet Ibis Charters</a>
+                </div>
+
+                <!-- Hamburger Menu -->
+                <div class="md:hidden">
+                    <button class="navbar-burger flex items-center text-white p-3">
+                        <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <title>Mobile menu</title>
+                            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="navbar-menu relative z-50 hidden">
+                    <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+                    <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+                        <div class="flex items-center mb-8">
+                            <a class="mr-auto text-3xl font-bold leading-none" href="#">
+                                <img class="object-scale-down w-20" src="./assets/scarletibis_notext.png">
+                            </a>
+
+                            <!-- Hamburger Menu Icon -->
+                            <button class="navbar-close">
+                                <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div>
+
+                            <!-- Hamburger Menu Items -->
+                            <ul>
+                                <li class="mb-1">
+                                    <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#home">Home</a>
+                                </li>
+                                <li class="mb-1">
+                                    <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#about">About Us</a>
+                                </li>
+                                <li class="mb-1">
+                                    <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#destinations">Destinations</a>
+                                </li>
+                                <li class="mb-1">
+                                    <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#gallery">Gallery</a>
+                                </li>
+                                <li class="mb-1">
+                                    <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#pricing">Pricing</a>
+                                </li>
+                                <li class="mb-1">
+                                    <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#contact">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+
+                <!-- Menu Items -->
+                <div class="text-base lg:text-lg space-x-4 hidden md:flex md:flex-row items-center text-white font-body">
+                    <a href="#about" class="hover:text-red-500 transition">About</a>
+                    <a href="#pricing" class="hover:text-red-500 transition">Pricing</a>
+                    <a href="#destinations" class="hover:text-red-500 transition">Destinations</a>
+                    <a href="#gallery" class="hover:text-red-500 transition">Gallery</a>
+                    <a href="https://waypoints.com/nausys-yacht/scarlet-ibis-fountaine-pajot-isla-40-3-cab-catamaran/" class="border-2 border-white py-1 px-3 rounded hover:bg-blue-800 hover:border-blue-800 transition">Book Now</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen parallax-video">
+
+        <!-- Parallax Background Video -->
+        <video class="absolute inset-0 w-full h-full object-cover brightness-50" autoplay loop muted playsinline>
+            <source src="./assets/testtttt.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Hero Text -->
+        <div class="flex flex-wrap items-center justify-center h-full text-center relative -z-10 space-x-0 md:space-x-4 px-0 md:px-16">
+          <div class="flex flex-col items-center justify-center">
+            <h1 class="text-white text-6xl md:text-7xl lg:text-8xl font-bold p-0 md:p-4 font-title -z-10 mb-4">Scarlet Ibis Charters</h1>
+            <h2 class="text-white text-md md:text-xl lg:text-3xl font-bold px-0 mx-2 md:px-4 lg:px-20 md:mx-4 lg:mx-20 font-body -z-10">Set sail on the Scarlet Ibis, a luxurious sailing yacht offering unforgettable charters through the pristine waters of the British Virgin Islands.</h2>
+          </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-6 md:px-8 lg:px-16">
+            <h2 class="text-4xl text-center font-semibold mb-8 font-title">Explore the British Virgin Islands</h2>
+            <p class="text-lg text-left mb-8 font-body">The Scarlet Ibis is a luxury sailing yacht based out of Nanny Cay, Road Town, Tortola, BVI and managed by Waypoints Yacht Charters.  Whether you're qualified to captain your own bareboat charter, or if you choose to hire a professional skipper, the British Virgin Islands are a paradise awaiting.  With predictable tradewinds, line-of-sight sailing, an abundance of protected and beautiful anchorages and many islands to explore (each with their own unique offerings), the BVI lives up to the title of Sailing Capital of the World.  For inquiries or bookings, contact Waypoints Yacht Charters at (443)-225-4355 or email <a href="mailto:bvi@waypoints.com" class="text-indigo-600 font-semibold">bvi@waypoints.com</a> and request info for the Scarlet Ibis.</p>
+            <div class="flex justify-center">
+                <a href="https://waypoints.com/nausys-yacht/scarlet-ibis-fountaine-pajot-isla-40-3-cab-catamaran/">
+                    <button class="flex justify-center bg-blue-900 text-white py-3 px-4 rounded hover:bg-blue-700 transition font-body">
+                        REQUEST A QUOTE
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="1.6em" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M9.97 7.47a.75.75 0 0 1 1.06 0l4 4a.75.75 0 0 1 0 1.06l-4 4a.75.75 0 1 1-1.06-1.06L13.44 12L9.97 8.53a.75.75 0 0 1 0-1.06" clip-rule="evenodd"/></svg>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Boat Section -->
+
+    <section id="ourboat" class="bg-white">
+      <div class="mx-auto max-w-screen-2xl px-4 pt-16 pb-32 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:h-128 lg:grid-cols-2">
+          <!-- Image Section -->
+          <div class="relative z-20 lg:py-8">
+            <div class="relative h-64 sm:h-80 lg:h-full">
+              <img
+                alt="Image of a Fountaine Pajot Isla 40 catamaran"
+                src="./assets/isla-40-img-2-min.jpg"
+                class="absolute inset-0 h-full w-full object-cover"
+              />
+            </div>
+          </div>
+    
+          <!-- Text Section with Overlap -->
+          <div class="relative flex items-center bg-gray-50 z-10 lg:-ml-12">
+            <span
+              class="hidden lg:absolute lg:inset-y-0 lg:-start-16 lg:block lg:w-16 lg:bg-gray-50"
+            ></span>
+    
+            <div class="p-8 sm:p-16 lg:p-20">
+              <h2 class="text-4xl font-semibold font-title sm:text-3xl mb-6">
+                About The Boat
+              </h2>
+    
+              <p class="text-lg text-left font-body">
+                The Scarlet Ibis is a Fountaine Pajot Isla 40 sailing catamaran in the Maestro version, meaning it has 3 cabins and two bathrooms, with the entire starboard hull dedicated as the master suite. The size of the boat is perfect for 2-3 couples or a small family. If you require a captain for your trip, just a reminder that they will need the port forward cabin, leaving 2 cabins for you and your crew. The Scarlet Ibis is also the perfect platform for a single couple on honeymoon or celebrating a special anniversary or other occasion. With the ability to shut the master suite off from the rest of the boat, you have complete privacy even with a captain on board.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+        
+    <!-- Destinations Section -->
+    <section id="destinations" class="py-16 bg-gray-50">
+        <div class="relative w-full glide-04">
+            <h2 class="text-4xl font-semibold text-center mb-8 font-title">Our Destinations</h2>
+            <!-- Slides -->
+            <div class="overflow-hidden" data-glide-el="track">
+                <ul class="relative w-full overflow-visible p-3 whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform]">
+                    <li>
+                        <div class="bg-white rounded shadow-md overflow-visible transition flex flex-col justify-between min-h-[548px]">
+                            <img src="./assets/tortolanew.jpeg" alt="Tortola" class="rounded-t w-full h-72 object-cover">
+                            <div class="p-4 font-body flex-grow">
+                                <h3 class="text-xl font-semibold mb-2">Tortola</h3>
+                                <p class="text-gray-700">Tortola, the largest of the British Virgin Islands, will act as your hub and gateway to the surrounding group of islands as you kick off your trip of a lifetime.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bg-white rounded shadow-md overflow-visible transition flex flex-col justify-between min-h-[548px]">
+                            <img src="./assets/anegada.jpg" alt="Anegada" class="rounded-t w-full h-72 object-cover">
+                            <div class="p-4 font-body flex-grow">
+                                <h3 class="text-xl font-semibold mb-2">Anegada</h3>
+                                <p class="text-gray-700">Anegada, the only coral island in the British Virgin Islands, is a serene paradise known for its endless white-sand beaches, vibrant coral reefs, and abundant marine life. Perfect for those seeking solitude and natural beauty, this flat, secluded island offers unparalleled opportunities for snorkeling, bone fishing, eco tours, and savoring freshly caught lobster while taking in some of the most incredible sunsets in the islands. </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bg-white rounded shadow-md overflow-visible transition flex flex-col justify-between min-h-[548px]">
+                            <img src="./assets/baths.jpg" alt="Virgin Gorda" class="rounded-t w-full h-72 object-cover">
+                            <div class="p-4 font-body flex-grow">
+                                <h3 class="text-xl font-semibold mb-2">Virgin Gorda</h3>
+                                <p class="text-gray-700">Virgin Gorda, a jewel of the British Virgin Islands, is famous for its breathtaking natural beauty, from the iconic Baths with their giant granite boulders to the tranquil waters of North Sound, a haven for sailors and water sports enthusiasts.  While in the North Sound, visits to two of the original icons, Saba Rock and The Bitter End Yacht Club, are a must.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bg-white rounded shadow-md overflow-visible transition flex flex-col justify-between min-h-[548px]">
+                            <img src="./assets/norman.jpg" alt="Norman Island" class="rounded-t w-full h-72 object-cover">
+                            <div class="p-4 font-body flex-grow">
+                                <h3 class="text-xl font-semibold mb-2">Norman Island</h3>
+                                <p class="text-gray-700">Norman Island, steeped in pirate lore and believed to be the inspiration for “Treasure Island,” is a secluded gem in the British Virgin Islands. With its hidden coves, hiking trails, crystal-clear waters, and renowned snorkeling spots like The Caves, this uninhabited island is perfect for those seeking land and sea adventures.  No trip to Norman Island is complete without a jump from the top of the infamous ship, the Willy T, or happy hour at Pirates Bight.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bg-white rounded shadow-md overflow-visible transition flex flex-col justify-between min-h-[548px]">
+                            <img src="./assets/coopermultishot.jpeg" alt="Cooper Island" class="rounded-t w-full h-72 object-cover">
+                            <div class="p-4 font-body flex-grow">
+                                <h3 class="text-xl font-semibold mb-2">Cooper Island</h3>
+                                <p class="text-gray-700">Cooper Island, a tranquil escape in the British Virgin Islands, is renowned for its eco-friendly resort, stunning coral reefs, and laid-back atmosphere. Ideal for diving, paddleboarding, or simply unwinding on pristine beaches, this island paradise offers a perfect blend of relaxation and adventure amidst breathtaking Caribbean scenery. Enjoy the wonderful restaurant, boutique shop, coffee and icecream bar, as well as the largest selection of rums from around the world at their amazing rum bar. </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bg-white rounded shadow-md overflow-visible transition flex flex-col justify-between min-h-[548px]">
+                            <img src="./assets/scrub.jpg" alt="Scrub Island/Marina Cay" class="rounded-t w-full h-72 object-cover">
+                            <div class="p-4 font-body flex-grow">
+                                <h3 class="text-xl font-semibold mb-2">Scrub Island/Marina Cay</h3>
+                                <p class="text-gray-700">Marina Cay is a charming oasis surrounded by turquoise waters and vibrant coral reefs. Known for its cozy beach bar, rich history, and stunning views, this tiny island offers a peaceful retreat for those seeking a quintessential Caribbean experience. Scrub Island is a luxurious island known for its private beaches, and elegant resort featuring upper and lower pool connected by a waterslide, swim-up bar and fantastic restaurant.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bg-white rounded shadow-md overflow-visible transition flex flex-col justify-between min-h-[548px]">
+                            <img src="./assets/guananew.png" alt="Guana Island" class="rounded-t w-full h-72 object-cover">
+                            <div class="p-4 font-body flex-grow">
+                                <h3 class="text-xl font-semibold mb-2">Guana Island</h3>
+                                <p class="text-gray-700">Guana Island, a private sanctuary in the British Virgin Islands, is celebrated for its untouched natural beauty, including the renowned Monkey Point, a prime snorkeling spot teeming with marine life. Although the island and resort are private, we have access to their beach, which is arguably the most stunning beach in the British Virgin Islands.  This secluded anchorage offers an unparalleled escape into nature and tranquility.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bg-white rounded shadow-md overflow-visible transition flex flex-col justify-between min-h-[548px]">
+                            <img src="./assets/jost.jpg" alt="Jost van Dyke" class="rounded-t w-full h-72 object-cover">
+                            <div class="p-4 font-body flex-grow">
+                                <h3 class="text-xl font-semibold mb-2">Jost van Dyke</h3>
+                                <p class="text-gray-700">Jost van Dyke is a vibrant island, well known for it's famous White Bay and beach bars, including the iconic Soggy Dollar Bar.  It's the perfect island for those looking for a big time. For those still seeking a bit of seclusion, Jost van Dyke also offers quiet anchorages and bays, hiking trails to natural features like the Bubbly Pool, and short boat rides to deserted islands like Sandy Cay and Sandy Spit.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- Controls -->
+            <div class="flex items-center justify-center w-full gap-2 p-4" data-glide-el="controls">
+                <button class="inline-flex items-center justify-center w-8 h-8 transition duration-300 border rounded-full lg:w-12 lg:h-12 text-slate-700 border-slate-700 hover:text-slate-900 hover:border-slate-900 focus-visible:outline-none bg-white/20" data-glide-dir="<" aria-label="prev slide">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                        <title>prev slide</title>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
+                    </svg>
+                </button>
+                <button class="inline-flex items-center justify-center w-8 h-8 transition duration-300 border rounded-full lg:w-12 lg:h-12 text-slate-700 border-slate-700 hover:text-slate-900 hover:border-slate-900 focus-visible:outline-none bg-white/20" data-glide-dir=">" aria-label="next slide">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                        <title>next slide</title>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-semibold text-center mb-8 font-title">Gallery</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="overflow-hidden">
+                    <img src="./assets/fps1.avif" alt="Interior 1" class="w-full h-52 object-cover gallery-img">
+                </div>
+                <div class="overflow-hidden">
+                    <img src="./assets/fps2.avif" alt="Interior 2" class="w-full h-52 object-cover gallery-img">
+                </div>
+                <div class="overflow-hidden">
+                    <img src="./assets/fps3.avif" alt="Interior 3" class="w-full h-52 object-cover gallery-img">
+                </div>
+                <div class="overflow-hidden">
+                    <img src="./assets/fps4.avif" alt="Interior 4" class="w-full h-52 object-cover gallery-img">
+                </div>
+                <div class="overflow-hidden">
+                    <img src="./assets/gallerynew1.png" alt="Interior 5" class="w-full h-52 object-cover gallery-img">
+                </div>
+                <div class="overflow-hidden">
+                    <img src="./assets/gallerynew2.png" alt="Interior 6" class="w-full h-52 object-cover gallery-img">
+                </div>
+            </div>
+
+            <!-- Youtube Video and Diagram -->
+          <div class="flex flex-col md:flex-row items-center mx-auto">
+            <div class="w-full md:w-1/2">
+              <!-- Diagram -->
+               <p class="text-center font-body mt-4 italic text-gray-600">Cabin Layout</p>
+              <img src="./assets/layoutcropped.png" alt="Image of cabin layout" class="w-full h-full object-cover">
+            </div>
+            <div class="flex flex-col items-center w-full sm:w-4/5 md:w-1/2 lg:w-1/2 mx-auto py-9">
+              <!-- Youtube Video -->
+                <div 
+                    class="relative h-0 overflow-hidden max-w-full w-full" 
+                    style="padding-bottom: 56.25%"
+                 >
+                    <iframe
+                           src="https://www.youtube.com/embed/ssRImJTuojE?si=UAlsHenWK7VhrGMu"
+                        frameborder="0"
+                        allowfullscreen
+                        class="absolute top-0 left-0 w-full h-full"
+                    ></iframe>
+                </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Instagram Feed Section -->
+    <section id="instagram" class="py-16 bg-gray-50">
+      <div class="container place-content-around content-center justify-center mx-auto px-4">
+          <h2 class="text-4xl font-semibold text-center mb-8 font-title">Follow Our Adventure</h2>
+          <div class="flex content-center place-content-around justify-center">
+              <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/sailingthescarletibis/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:640px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/sailingthescarletibis/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this profile on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/sailingthescarletibis/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank">S/V Scarlet Ibis</a> (@<a href="https://www.instagram.com/sailingthescarletibis/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank">sailingthescarletibis</a>) • Instagram photos and videos</p></div></blockquote>
+              <script async src="//www.instagram.com/embed.js"></script>
+          </div>
+        </div>
+    </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="py-16 bg-white">
+          <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div
+              class="flex flex-col justify-center items-center gap-x-16 gap-y-5 xl:gap-28 lg:flex-row lg:justify-between max-lg:max-w-2xl mx-auto max-w-full"
+            >
+              <div class="w-full lg:w-1/2">
+                <img
+                  src="./assets/boatpic.jpeg"
+                  alt="FAQ tailwind section"
+                  class="w-full rounded-xl object-cover"
+                />
+              </div>
+              <div class="w-full lg:w-1/2">
+                <div class="lg:max-w-xl">
+                  <div class="pb-6 mb-6 lg:mb-8">
+                    <h2
+                      class="text-4xl text-center font-semibold font-title text-gray-900 leading-[3.25rem] lg:text-left"
+                    >
+                      Frequently Asked Questions
+                    </h2>
+                  </div>
+                  <div class="accordion-group" data-accordion="default-accordion">
+                    <div
+                      class="accordion pb-8 border-b border-solid border-gray-200 active"
+                      id="basic-heading-one-with-arrow-always-open"
+                    >
+                      <button
+                        class="accordion-toggle group inline-flex items-center justify-between text-xl font-normal font-body leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:font-medium always-open"
+                        aria-controls="basic-collapse-one-with-arrow-always-open"
+                      >
+                        <h5 >How Do I Book?</h5>
+                        <svg
+                          class="text-gray-900 font-body transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180"
+                          width="22"
+                          height="22"
+                          viewBox="0 0 22 22"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                      </button>
+                      <div
+                        id="basic-collapse-one-with-arrow-always-open"
+                        class="accordion-content w-full px-0 overflow-hidden pr-4 active"
+                        style="max-height: 100px;"
+                        aria-labelledby="basic-heading-one-with-arrow-always-open"
+                      >
+                        <p class="mt-2 text-base font-normal text-gray-600 ">
+                          You may ask for a quote or booking info with our yacht managers, Waypoints Yacht Charters BVI,
+                           by clicking the link 
+                           <a href="https://waypoints.com/nausys-yacht/scarlet-ibis-fountaine-pajot-isla-40-3-cab-catamaran/" class="text-indigo-600 font-semibold">here</a>.
+                             Of course, we're always happy to answer questions and facilitate the process by emailing us at <a href="mailto:mike@scarletibischarters.com" class="text-indigo-600 font-semibold">mike@scarletibischarters.com</a>
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="accordion py-8 border-b border-solid border-gray-200 "
+                      id="basic-heading-two-with-arrow-always-open"
+                    >
+                      <button
+                        class="accordion-toggle group inline-flex items-center justify-between font-normal text-xl leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:font-medium"
+                        aria-controls="basic-collapse-two-with-arrow-always-open"
+                      >
+                        <h5>What's Included In The Quoted Price?</h5>
+                        <svg
+                          class="text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180"
+                          width="22"
+                          height="22"
+                          viewBox="0 0 22 22"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                      </button>
+                      <div
+                        id="basic-collapse-two-with-arrow-always-open"
+                        class="accordion-content w-full px-0 overflow-hidden pr-4"
+                        aria-labelledby="basic-heading-two-with-arrow-always-open"
+                        style=""
+                      >
+                        <p class="text-base mt-2 text-gray-500 font-normal">
+                          The seasonal price that you see on the website is only for the vessel, for a week (8 days, 7 nights).  Your official quote will contain the vessel charter fee, as well as miscellaneous fees (Cancellation Insurance, Cruising Permit Tax, National Park Permit, Virgin Island Search and Rescue Fee, etc) which, at the time of this publishing, total just under $1000 USD for a week long booking.  You will be required to provide a credit card in which a $5000 hold is placed to cover the hull insurance deductable in case of any accidents involving the vessel while in charter.  This will not be charged unless an event that causes damage to the boat triggers a charge.  Once the charter is complete, you are required to refuel the vessel as well as the dinghy.  Depending on the amount that you motor vs sail, and how often you run the generator, that dollar amount is usually no more than $450, depending on the price of fuel at the time.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="accordion py-8 border-b border-solid border-gray-200"
+                      id="basic-heading-three-with-arrow-always-open"
+                    >
+                      <button
+                        class="accordion-toggle group inline-flex items-center justify-between text-xl font-normal leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 accordion-active:font-medium accordion-active:text-indigo-600"
+                        aria-controls="basic-collapse-three-with-arrow-always-open"
+                      >
+                        <h5>How Do I Get There?</h5>
+                        <svg
+                          class="text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180"
+                          width="22"
+                          height="22"
+                          viewBox="0 0 22 22"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                      </button>
+                      <div
+                        id="basic-collapse-three-with-arrow-always-open"
+                        class="accordion-content w-full px-0 overflow-hidden pr-4"
+                        aria-labelledby="basic-heading-three-with-arrow-always-open"
+                      >
+                        <p class="text-base mt-2 text-gray-500 font-normal">
+                          The Scarlet Ibis is located at Nanny Cay Marina in Road Town on the island of Tortola, BVI.  Tortola has a small airport (Beef Island, EIS) that is serviced by American Airlines, as well as a few smaller Caribbean airlines.  Due to the length of the airport runway, the flights are limited by plane size.  Direct flights to Beef Island are few and far between, and the smaller airlines are not always the most reliable, but it is doable.  Our preference is to fly into Charlotte Amalie (STT)  airport on St. Thomas, USVI and take a 45 minute ferry or 30 minute private water taxi to Tortola.  There are direct flights from a few major cities to St. Thomas, and the flights tend to be cheaper and more reliable.  The ferries are affordable and pretty reliable.  You do have to deal with their schedule and some crowds when checking into Immigration and Customs.  Private water taxis are a great option, especially if you're in a group of other couples to split the cost.  They are more expensive, however, the cost usually includes the land taxi from the airport to the water taxi, customized departure time, and concierge service when checking into Immigration and Customs once in the BVI.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="accordion py-8 border-b border-solid border-gray-200 "
+                      id="basic-heading-two-with-arrow-always-open"
+                    >
+                      <button
+                        class="accordion-toggle group inline-flex text-left items-center justify-between font-normal text-xl leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:font-medium"
+                        aria-controls="basic-collapse-two-with-arrow-always-open"
+                      >
+                        <h5>What Is Provisioning and How Do I Do It?</h5>
+                        <svg
+                          class="text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180"
+                          width="22"
+                          height="22"
+                          viewBox="0 0 22 22"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                      </button>
+                      <div
+                        id="basic-collapse-four-with-arrow-always-open"
+                        class="accordion-content w-full px-0 overflow-hidden pr-4"
+                        aria-labelledby="basic-heading-four-with-arrow-always-open"
+                      >
+                        <p class="text-base mt-2 text-gray-500 font-normal">
+                          Provisioning is a fancy yachting word for grocery shopping.  The large supermarket brand on Tortola is called Riteway. They have a flagship store where you can go and shop in person, or you can order online ahead of time and schedule to have your provisions dropped directly off at the boat.  That system is great but far from perfect.  If they are out of an item you request, they may substitute something that doesn't make sense.  Or one avacado ordered may show up as one entire case of avacados.  You can always request credit from the store if something is missing or incorrect.  There is a small Riteway store at the marina, just a two minute walk from the boat, where you can get a lot of the basics as well.  There are some great boutique providers on Tortola as well, such as The French Deli, Steakation and Caribbean Cellars, where you can find many higher end foods and bottles in person or delivered directly to the boat.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="accordion py-8 border-b border-solid border-gray-200 "
+                      id="basic-heading-two-with-arrow-always-open"
+                    >
+                      <button
+                        class="accordion-toggle group inline-flex items-center justify-between font-normal text-xl leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:font-medium"
+                        aria-controls="basic-collapse-two-with-arrow-always-open"
+                      >
+                        <h5>Is There A Set Itenerary?</h5>
+                        <svg
+                          class="text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180"
+                          width="22"
+                          height="22"
+                          viewBox="0 0 22 22"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                      </button>
+                      <div
+                        id="basic-collapse-four-with-arrow-always-open"
+                        class="accordion-content w-full px-0 overflow-hidden pr-4"
+                        aria-labelledby="basic-heading-four-with-arrow-always-open"
+                      >
+                        <p class="text-base mt-2 text-gray-500 font-normal">
+                          Most sailing trips in the BVI follow a pattern of either a clockwise or counterclockwise route from the charter base to the surrounding islands.  Typically a trip will start by heading either to Cooper Island or Norman Island, and hopscotch along the the islands circling Tortola.  The one island outside of the main loop is Anegada. If weather is permitting, it is a beautiful, remote change of pace from everywhere else.  But ultimately, outside of the weather, you can dictate where you go and spend your time.  If you have a favorite spot, head directly there if it makes sense.  If you discover a new place you love, stick around for a couple of days instead of sailing off the next morning.  That's the beauty of a private charter; you set the agenda.  If you're new to it all, we can help with an itenerary.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="accordion py-8 border-b border-solid border-gray-200 "
+                      id="basic-heading-two-with-arrow-always-open"
+                    >
+                      <button
+                        class="accordion-toggle group inline-flex text-left items-center justify-between font-normal text-xl leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:font-medium"
+                        aria-controls="basic-collapse-two-with-arrow-always-open"
+                      >
+                        <h5>How Much Should I Worry About Seasickness?</h5>
+                        <svg
+                          class="text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180"
+                          width="22"
+                          height="22"
+                          viewBox="0 0 22 22"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                      </button>
+                      <div
+                        id="basic-collapse-four-with-arrow-always-open"
+                        class="accordion-content w-full px-0 overflow-hidden pr-4"
+                        aria-labelledby="basic-heading-four-with-arrow-always-open"
+                      >
+                        <p class="text-base mt-2 text-gray-500 font-normal">
+                          Seasickness affects everyone differently and sometimes not at all.  We can recommend things like staying hydrated, over-the-counter remedies like Dramamine, natural items like ginger candies or mint, or asking your doctor for a presciption for a patch that you wear behind your ear.  These things may or may not work for you, but often times some combination of these remedies along with benefit of being on a catamaran and not a mononhull (Scarlet Ibis is a much more stable platform than a monohull and therefore is not affected by the ocean nearly as much), as well as most daily sails being in fairly protected waters and often times no more than 6-8 miles apart, can make managing symptoms doable for most people.  Almost all anchorages are well protected and free from ocean swell, so once you get on anchor or a mooring ball for the afternoon and evening, it's likely you'll barely notice the motion on the boat.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="accordion py-8 border-b border-solid border-gray-200 "
+                      id="basic-heading-two-with-arrow-always-open"
+                    >
+                      <button
+                        class="accordion-toggle group inline-flex items-center justify-between font-normal text-xl leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:font-medium"
+                        aria-controls="basic-collapse-two-with-arrow-always-open"
+                      >
+                        <h5>What Activities Are There To Do?</h5>
+                        <svg
+                          class="text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180"
+                          width="22"
+                          height="22"
+                          viewBox="0 0 22 22"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                      </button>
+                      <div
+                        id="basic-collapse-four-with-arrow-always-open"
+                        class="accordion-content w-full px-0 overflow-hidden pr-4"
+                        aria-labelledby="basic-heading-four-with-arrow-always-open"
+                      >
+                        <p class="text-base mt-2 text-gray-500 font-normal">
+                          While it's easy to lounge the days away, sailing, sunning, and enjoying a lovely beach, there are plenty of exciting activities to enjoy in the BVI.  Water-based options are snorkeling the many reefs, scuba diving, kayaking and paddleboarding, kiteboarding, wing foiling, and hobie cat sailing just to name a few.  If you don't have your own gear (or skills) there are plenty of outfitters and instructors that will be happy to make sure you're taken care of.  As for land-based activities, many islands have trails for hiking, geological features to explore such as The Baths, and the Bubbly Pool, rum distillery tours, ecotours of the Anegada Salt ponds and the nature preserve on Necker Island, as well as walking around different towns exploring the shops, restaurants and beach bars.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="accordion py-8 "
+                      id="basic-heading-four-with-arrow-always-open"
+                    >
+                      <button
+                        class="accordion-toggle group inline-flex items-center text-left justify-between text-xl font-normal leading-8 text-gray-600 w-full transition duration-500 hover:text-indigo-600 accordion-active:font-medium accordion-active:text-indigo-600"
+                        aria-controls="basic-collapse-four-with-arrow-always-open"
+                      >
+                        <h5>Is There A Big Difference In The Time Of Year I Choose To Book?</h5>
+                        <svg
+                          class="text-gray-900 transition duration-500 group-hover:text-indigo-600 accordion-active:text-indigo-600 accordion-active:rotate-180"
+                          width="22"
+                          height="22"
+                          viewBox="0 0 22 22"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                      </button>
+                      <div
+                        id="basic-collapse-four-with-arrow-always-open"
+                        class="accordion-content w-full px-0 overflow-hidden pr-4"
+                        aria-labelledby="basic-heading-four-with-arrow-always-open"
+                      >
+                        <p class="text-base mt-2 text-gray-500 font-normal">
+                          As you'll notice, there are seasonal price differences based on what time of year you choose to book.  Most of those price differences are based on the crowds and not the weather, so book a trip that best suits your schedule.  You'll notice that from around August 1st through the end of October, there are relatively few options, as that is hurricane season, and most operations shut down during that time.  As for the rest of the year, the temperature highs and low only vary by about 5 degree fahrenheit from the summer to the winter.  The winds are often most consistent for sailing between December and April, but are usually just fine outside of those months.  It can get a little stormier in May through July, but they often pass quickly.  Our favorite times are between November and April, but we always enjoy whenever we are down there.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container py-8 lg:py-16 px-4 md:px-14 lg:px-16 mx-auto">
+              <p class="text-center text-gray-600 text-lg"><strong>Have any other questions?</strong> Chartering a sailing adventure in another country can be overwhelming, whether it's your first time, or if you're a veteran. We're happy to answer any questions that you may have in regards to chartering the Scarlet Ibis and sailing the British Virgin Islands. Don't hesitate to reach out to <a href="mailto:mike@scarletibischarters.com" class="text-indigo-600 font-semibold">mike@scarletibischarters.com</a></p>
+          </div>
+        </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4 lg:px-24">
+        <div
+            class="flex flex-col justify-center items-center gap-x-16 gap-y-5 xl:gap-28 lg:flex-row lg:justify-between max-lg:max-w-2xl mx-auto max-w-full"
+          >
+          <div class="w-full lg:w-1/2">
+        <h2 class="text-4xl font-semibold text-center mb-8 font-title">Pricing</h2>
+        <div class="flex items-center flex-col justify-center content-center">
+          <table class="w-full text-lg text-left text-gray-600 mb-8">
+              <thead class="text-sm md:text-md lg:text-lg text-gray-700 uppercase">
+                  <tr>
+                      <th scope="col" class="px-6 py-3 bg-blue-100">
+                          high
+                      </th>
+                      <th scope="col" class="px-6 py-3 bg-blue-100">
+                          medium
+                      </th>
+                      <th scope="col" class="px-6 py-3 bg-blue-100">
+                          low
+                      </th>
+                      <th scope="col" class="px-6 py-3 bg-blue-100">
+                          off
+                      </th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr class="border-b  text-sm md:text-md lg:text-lg border-gray-200">
+                      <th scope="row" class="px-6 py-4 font-medium bg-white">
+                        12/16 - 1/6<br>2/1 - 3/31
+                      </th>
+                      <td class="px-6 py-4">
+                        1/7 - 1/31<br>4/1 - 4/30
+                      </td>
+                      <td class="px-6 py-4 bg-white">
+                        5/1 - 7/9<br>11/6 - 12/15
+                      </td>
+                      <td class="px-6 py-4">
+                          
+                      </td>
+                  </tr>
+                  <tr class="text-sm md:text-md lg:text-lg">
+                      <th scope="row" class="px-6 py-4 font-medium bg-white">
+                        $7,900
+                      </th>
+                      <td class="px-6 py-4">
+                        $7,200
+                      </td>
+                      <td class="px-6 py-4 bg-white">
+                        $6,700
+                      </td>
+                      <td class="px-6 py-4">
+                        $5,500
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
+          <p class="font-body italic text-gray-500 text-sm md:text-md px-4 mb-4 md:px-16">*Pricing is based on 7 nights aboard. Charters begin at noon on your first day, and end at noon on your final day. Add a sleepaboard the night before your charter to board your boat at 4pm so you have a place to stay after traveling. Make the most of your first day on charter by adding a sleepaboard for half the nightly rate. All rates are subject to change. Effective July 1, 2024.</p>
+        </div>
+        </div>
+        <div class="flex justify-center w-full lg:w-1/2">
+          <img src="./assets/dontevenknow.avif" alt="Photo of a Fountaine Pajot 40 catamaran" class="w-full md:w-3/4 rounded-xl object-cover">
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" aria-label="What our customers are saying" class="bg-white py-20 sm:py-32">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl md:text-center">
+          <h2 class="font-title text-3xl tracking-tight text-slate-900 sm:text-4xl">Our Testimonials</h2>
+        </div>
+        <ul role="list"
+          class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:gap-8 lg:mt-20 lg:max-w-none lg:grid-cols-3">
+          <li>
+            <ul role="list" class="flex font-body flex-col gap-y-6 sm:gap-y-8">
+              <li>
+                <figure class="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10"><svg aria-hidden="true"
+                    width="105" height="78" class="absolute left-6 top-6 fill-current text-blue-50">
+                    <path
+                      d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z">
+                    </path>
+                  </svg>
+                  <blockquote class="relative">
+                    <p class="text-lg tracking-tight text-slate-900">We had the most amazing week on the Scarlet Ibis! A beautiful boat with an incredible crew that is extremely knowledgeable about the BVI. Our trip was seamless and we would go back in a heartbeat! We did everything from hiking the islands, snorkeling, dancing the night away, massages with an ocean breeze from the spa at Saba Rock, delicious seafood at every restaurant & on the boat! You will not regret vacationing on the Scarlet Ibis. They truly treat you like family! ❤️</p>
+                  </blockquote>
+                  <figcaption class="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
+                    <div>
+                      <div class="font-display text-base text-slate-900">-Christy P.</div>
+                      <div class="font-display text-base text-slate-900">Charlotte, NC</div>
+                    </div>
+                    <div class="overflow-hidden rounded-full bg-slate-50">
+                      <img alt="" class="h-14 w-14 object-cover" style="color:transparent" src="./assets/image0.jpeg">
+                    </div>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <ul role="list" class="flex flex-col gap-y-6 sm:gap-y-8">
+              <li>
+                <figure class="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10"><svg aria-hidden="true"
+                    width="105" height="78" class="absolute left-6 top-6 fill-current text-blue-50">
+                    <path
+                      d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z">
+                    </path>
+                  </svg>
+                  <blockquote class="relative">
+                    <p class="text-lg tracking-tight text-slate-900">5 STARS!!!... Room and space on the boat far exceeded our expectations, as there are multiple spots on the boat to relax with your group or find a quiet spot for yourself.  All the amenities were provided to secure what was simply the best trip we have ever been on.  Thank You Scarlet Ibis!</p>
+                  </blockquote>
+                  <figcaption class="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
+                    <div>
+                      <div class="font-display text-base text-slate-900">-Travis W.</div>
+                      <div class="font-display text-base text-slate-900">Indian Land, SC</div>
+                    </div>
+                    <div class="overflow-hidden rounded-full bg-slate-50">
+                      <img alt="" class="h-14 w-14 object-cover" style="color:transparent" src="./assets/travis.jpeg">
+                    </div>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <ul role="list" class="flex flex-col gap-y-6 sm:gap-y-8">
+              <li>
+                <figure class="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10"><svg aria-hidden="true"
+                    width="105" height="78" class="absolute left-6 top-6 fill-current text-blue-50">
+                    <path
+                      d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z">
+                    </path>
+                  </svg>
+                  <blockquote class="relative">
+                    <p class="text-lg tracking-tight text-slate-900">Spent a week on the Scarlet Ibis, and it was a trip of a lifetime! Sailed to a different island everyday - experiencing so much of what the BVI has to offer. Incredible views, an immaculately clean boat, and ample lounging space where the 6 of us never felt crowded. Star-gazing in the front lounger and trampoline areas is a must do!</p>
+                  </blockquote>
+                  <figcaption class="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
+                    <div>
+                      <div class="font-display text-base text-slate-900">-Bryan D.</div>
+                      <div class="font-display text-base text-slate-900">Fort Mill, SC</div>
+                    </div>
+                    <div class="overflow-hidden rounded-full bg-slate-50">
+                      <img alt="" class="h-14 w-14 object-cover" style="color:transparent" src="./assets/bryan.png">
+                    </div>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-semibold text-center mb-8 font-title">Contact Us</h2>
+            <form id="contact-form" action="https://formsubmit.co/929a257d0cbffb67aec14ae699b76726" method="POST" class="max-w-lg mx-auto font-body">
+
+                <!-- Honeypot -->
+                <input type="text" name="_honey" class="hidden">
+                <input type="hidden" name="_captcha" value="false">
+
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name</label>
+                    <input type="text" id="name" name="name" class="w-full px-3 py-2 border border-gray-300 rounded" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
+                    <input type="email" id="email" name="email" class="w-full px-3 py-2 border border-gray-300 rounded" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message</label>
+                    <textarea id="message" name="message" rows="5" class="w-full px-3 py-2 border border-gray-300 rounded" required></textarea>
+                </div>
+                <div class="flex justify-center">
+                    <button type="submit" id="submit-btn" class="bg-blue-900 text-white py-2 px-4 rounded hover:bg-blue-700 transition">Send Message</button>
+                </div>
+            </form>
+             <!-- Success Message -->
+            <div id="success-message" class="mt-4 p-4 bg-green-100 text-green-800 rounded-lg text-center hidden">
+            Thank you! Your message has been sent successfully.
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="bottom-0 left-0 z-20 w-full py-4 border-t md:flex md:items-center md:justify-between md:p-6 bg-gray-800 text-white text-center">
+        <span class="text-sm space-x-4 text-white sm:text-center">© 2024 <a href="https://www.scarletibischarters.com" class="hover:underline">Scarlet Ibis Charters™</a>. All Rights Reserved.
+        </span>
+        <ul class="flex flex-wrap space-x-4 text-center justify-center items-center mt-3 text-sm font-medium white sm:mt-0">
+            <li>
+                <a href="#about" class="hover:underline me-4 md:me-6">About</a>
+            </li>
+            <li>
+                <a href="#pricing" class="hover:underline me-4 md:me-6">Pricing</a>
+            </li>
+            <li>
+                <a href="#faq" class="hover:underline me-4 md:me-6">FAQ</a>
+            </li>
+            <li>
+                <a href="#contact" class="hover:underline">Contact</a>
+            </li>
+        </ul>
+    </footer>
+
+
+    <!-- Lightbox (for gallery) -->
+    <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden">
+        <img id="lightbox-img" class="max-w-3xl max-h-screen">
+        <span class="absolute top-4 right-4 text-white text-2xl cursor-pointer" onclick="closeLightbox()">&times;</span>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="siscript.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/glide.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/js/pagedone.js"></script>
+    <script>
+        var glide04 = new Glide('.glide-04', {
+            type: 'carousel',
+            focusAt: 'center',
+            perView: 3,
+            autoplay: 3500,
+            animationDuration: 700,
+            gap: 24,
+            classes: {
+                activeNav: '[&>*]:bg-slate-700',
+            },
+            breakpoints: {
+                1024: {
+                    perView: 2
+                },
+                640: {
+                    perView: 1
+                }
+            },
+        });
+    
+        glide04.mount();
+    </script>
+</body>
+</html>

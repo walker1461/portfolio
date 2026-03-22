@@ -1,0 +1,342 @@
+body {
+    font-family: 'Press Start 2P', sans-serif;
+    background: transparent;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    margin: 0;
+}
+
+a {
+    color: #025a4e;
+    text-decoration: none;
+    text-decoration-color: #82a18f;
+}
+
+a:hover {
+    color: #82a18f;
+    text-decoration: underline;
+    text-underline-offset: 0.15rem;
+    text-decoration-color: #82a18f;
+}
+
+.logo {
+    font-size: 1.9rem;
+}
+
+.logo:hover {
+    cursor: default;
+}
+
+#machine {
+    background-color: #383838;
+    border: 10px solid rgb(43, 42, 42);
+    padding-top: 10px;
+    padding-bottom: 36px;
+    padding-right: 4rem;
+    padding-left: 3rem;
+    border-radius: 10px;
+    box-shadow:
+        inset 0 0 10px rgba(0, 0, 0, 0.8),
+        0 0 10px rgba(0, 0, 0, 0.7);
+    /* width: 50%; */
+    /* margin-left: 25%; */
+}
+
+h1 {
+    color: #f5a623;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-left: 0;
+    text-align: center;
+}
+
+.drum-machine {
+    max-width: 900px;
+    width: 100%;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: 100px repeat(16, 40px);
+    grid-gap: 5px;
+}
+
+button {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    border: 2px solid #444;
+    transition: background-color 0.3s;
+}
+
+.kick {
+    background-color: #db3309;
+}
+
+.snare {
+    background-color: #db3309;
+}
+
+.hihat {
+    background-color: #e27227;
+}
+
+.clap {
+    background-color: #e27227;
+}
+
+.cowbell {
+    background-color: #e6da3d;
+}
+
+.tom {
+    background-color: #e6da3d;
+}
+
+.openhat {
+    background-color: #f8f3d4;
+}
+
+.rim {
+    background-color: #f8f3d4;
+}
+
+button.active.kick {
+    background-color: #f1856a;
+    border: 2px solid #cfcbb1;
+}
+
+button.active.snare {
+    background-color: #f1856a;
+    border: 2px solid #cfcbb1;
+}
+
+button.active.hihat {
+    background-color: #df9d72;
+    border: 2px solid #cfcbb1;
+}
+
+button.active.clap {
+    background-color: #df9d72;
+    border: 2px solid #cfcbb1;
+}
+
+button.active.cowbell {
+    background-color: #e2dc87;
+    border: 2px solid #cfcbb1;
+}
+
+button.active.tom {
+    background-color: #e2dc87;
+    border: 2px solid #cfcbb1;
+}
+
+button.active.openhat {
+    background-color: #383838;
+    border: 2px solid #cfcbb1;
+}
+
+button.active.rim {
+    background-color: #383838;
+    border: 2px solid #cfcbb1;
+}
+
+button.highlight {
+    box-shadow: 0 0 10px rgb(255, 255, 169);
+}
+
+.row-label {
+    color: #f5a623;
+    text-align: left;
+    line-height: 40px;
+    font-size: 12px;
+}
+
+.controls {
+    margin-top: 20px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.play-button,
+.save-button,
+.clear-button {
+    background-color: #db3309;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-right: 2px;
+}
+
+.play-button:hover,
+.save-button:hover,
+.clear-button:hover {
+    background-color: #b00117;
+}
+
+.play-button i,
+.save-button i,
+.clear-button i {
+    margin-right: 0px;
+}
+
+#bpm {
+    position: relative;
+    bottom: 0.5rem;
+    width: 300px;
+}
+
+.slider-label {
+    font-size: 14px;
+    color: #f5a623;
+    margin-left: 6px;
+}
+
+.pattern-bank {
+    margin-top: 20px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.pattern-slot {
+    width: 32px;
+    height: 32px;
+    background-color: #444;
+    border: 2px solid #f5a623;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.pattern-slot.active {
+    background-color: #f5a623;
+    color: #1a1a1a;
+}
+
+@media (max-width: 768px) {
+    .button-grid {
+        grid-template-columns: 80px repeat(8, 40px);
+    }
+
+    .play-button {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+
+    #bpm {
+        width: 200px;
+    }
+}
+
+input[type='range'] {
+    height: 0px;
+    -webkit-appearance: none;
+    margin: 10px 0px 9px 0px;
+    width: 100%;
+}
+
+input[type='range']:focus {
+    outline: none;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px #deecff;
+    background: #40a143;
+    border-radius: 4px;
+    border: 2px solid rgb(5, 131, 10);
+}
+
+input[type='range']::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px #828282;
+    border: 2px solid #cf7f07;
+    height: 18px;
+    width: 18px;
+    border-radius: 5px;
+    background: #db8709;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -7px;
+}
+
+input[type='range']:focus::-webkit-slider-runnable-track {
+    background: #40a143;
+}
+
+input[type='range']::-moz-range-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px #deecff;
+    background: #2b2928;
+    border-radius: 4px;
+    border: 2px solid rgb(41, 38, 38);
+}
+
+input[type='range']::-moz-range-thumb {
+    box-shadow: 0px 0px 0px #828282;
+    border: 2px solid #cf7f07;
+    height: 18px;
+    width: 18px;
+    border-radius: 5px;
+    background: #db8709;
+    cursor: pointer;
+}
+
+input[type='range']::-ms-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+input[type='range']::-ms-fill-lower {
+    background: #03ab25;
+    border: 2px solid rgb(5, 131, 10);
+    border-radius: 8px;
+    box-shadow: 0px 0px 0px #deecff;
+}
+
+input[type='range']::-ms-fill-upper {
+    background: #03ab25;
+    border: 2px solid rgb(5, 131, 10);
+    border-radius: 8px;
+    box-shadow: 0px 0px 0px #deecff;
+}
+
+input[type='range']::-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 0px 0px 0px #828282;
+    border: 2px solid #cf7f07;
+    height: 18px;
+    width: 18px;
+    border-radius: 5px;
+    background: #db8709;
+    cursor: pointer;
+}
+
+input[type='range']:focus::-ms-fill-lower {
+    background: #03ab25;
+}
+
+input[type='range']:focus::-ms-fill-upper {
+    background: #03ab25;
+}

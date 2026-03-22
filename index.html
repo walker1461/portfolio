@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#000000" />
+    <title>Walker Immel</title>
+    <link href="assets/style.css" rel="stylesheet" />
+    <!-- <link href="src/style.css" rel="stylesheet" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="hero" class="relative h-screen bg-black overflow-hidden">
+      <!-- Top bar / nav -->
+      <div
+        id="topbar"
+        class="bg-black text-gray-300 relative md:absolute top-0 left-0 w-full z-20"
+      >
+        <button
+          id="menu-button"
+          class="text-gray-200 text-5xl absolute right-0 top-0 md:hidden mr-4"
+        >
+          ☰
+        </button>
+        <nav
+          id="menu"
+          class="hidden md:flex items-center justify-between pt-6 px-56 tracking-wide text-2xl md:text-lg"
+        >
+          <a href="about.html" class="nav-link">about</a>
+          <a href="projects.html" class="nav-link">projects</a>
+          <a href="music.html" class="nav-link">music</a>
+        </nav>
+      </div>
+
+      <!-- Mobile menu -->
+      <div
+        id="mobile-menu-main"
+        class="hidden absolute top-0 left-0 w-full bg-black text-xl text-white flex flex-col items-center gap-10 pt-16 z-30"
+      >
+        <a href="about.html">about</a>
+        <a href="projects.html">projects</a>
+        <a href="music.html">music</a>
+      </div>
+
+      <!-- Bottom bar -->
+      <div
+        id="bottombar"
+        class="bg-black text-gray-400 absolute w-full z-21 flex items-center justify-between bottom-0 left-0 right-0"
+      >
+        <p class="p-4 hidden md:flex md:text-lg">
+          &copy; 2026 Walker Immel. All Rights Reserved.
+        </p>
+        <button
+          id="disable-waves-btn"
+          class="m-4 md:p-4 md:flex md:text-lg hover:rounded py-1 px-2 mr-2"
+        >
+          disable motion graphics
+        </button>
+      </div>
+
+      <!-- Canvases for waves -->
+      <canvas
+        id="grid-canvas"
+        class="absolute inset-0 w-full h-full pointer-events-none hidden md:block"
+      ></canvas>
+      <canvas
+        id="wave-canvas"
+        class="absolute inset-0 w-full h-full pointer-events-none"
+      ></canvas>
+
+      <!-- Main centered headings -->
+      <div
+        class="relative z-10 bottom-4 pb-4 md:pb-0 flex flex-col items-center justify-center h-full text-white"
+      >
+        <div class="text-center">
+          <h1 class="h1-custom text-5xl md:text-6xl">Walker Immel</h1>
+          <h2 class="h2-custom mt-4 text-lg md:text-xl text-gray-300">
+            Software Developer / Music Technologist
+          </h2>
+        </div>
+      </div>
+
+      <!-- Resume button: free-floating -->
+      <a
+        id="resume-btn"
+        href="src/assets/Forrest Immel Resume 2026.docx.pdf"
+        target="_blank"
+        class="a-custom absolute top-[55%] md:top-[60%] lg:top-[59.4%] left-1/2 -translate-x-1/2 z-15 px-3 py-1.5 text-black rounded hover:bg-gray-200 transition"
+      >
+        view resume
+      </a>
+    </div>
+
+    <script type="module" src="src/main.js"></script>
+    <!-- <script src="src/main.js"></script> -->
+  </body>
+</html>

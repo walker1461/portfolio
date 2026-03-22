@@ -1,0 +1,22 @@
+/* Reactive Logo Sizing */
+@media screen and (max-width: 1400px) {
+    .logo {
+        height: 3.1rem;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .logo {
+    height: 2.9rem;
+    width: auto;
+}
+}
+
+@media screen and (max-width: 600px) {
+    .logo {
+        height: 2.5rem;
+        width: auto;
+        margin-left: 1vw;
+    }
+}
