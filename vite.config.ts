@@ -12,7 +12,7 @@ export default defineConfig({
         main: 'index.html',
         about: 'src/about.html',
         projects: 'src/projects.html',
-        music: 'src/music.html'
+        contact: 'src/contact.html'
       }
     }
   }
